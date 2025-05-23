@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container py-4">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#tab-accordion">
+            Accordion
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#tab-alerts">Alerts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#tab-listgroups">
+            List groups
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#tab-cards">Cards</a>
+        </li>
+      </ul>
+
+      <div class="tab-content mt-3">
+        <!-- ACCORDION TAB -->
+        <div class="tab-pane fade show active" id="tab-accordion">
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2>
+                <button
+                  class="accordion-button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#c1"
+                >
+                  Opció Acordió 1
+                </button>
+              </h2>
+              <div id="c1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>Primer element de l'acordió.</strong>
+                  Blah blah blah.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button
+                  class="accordion-button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#c2"
+                >
+                  Opció Acordió 2
+                </button>
+              </h2>
+              <div id="c2" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>Segon element de l'acordió.</strong>
+                  Blah blah blah.
+                  <a href="#">Vull saber-ne més</a>
+                  .
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button
+                  class="accordion-button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#c3"
+                >
+                  Opció Acordió 3
+                </button>
+              </h2>
+              <div id="c3" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>Tercer element de l'acordió.</strong>
+                  Blah blah blah.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#c4"
+                >
+                  Opció Acordió 4
+                </button>
+              </h2>
+              <div id="c4" class="accordion-collapse collapse">
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ALERTS TAB -->
+        <div class="tab-pane fade" id="tab-alerts"></div>
+
+        <!-- LIST GROUPS TAB -->
+
+        <!-- LIST GROUPS TAB -->
+        <div class="tab-pane fade" id="tab-listgroups">
+          <!-- Safata d'entrada -->
+          <h2 class="mt-4 mb-3">Safata d'entrada</h2>
+          <ul class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center bg-success bg-opacity-25 text-success"
+            >
+              Entrada
+              <span class="badge bg-secondary rounded-pill">13</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center bg-info bg-opacity-25 text-info"
+            >
+              Enviats
+              <span class="badge bg-secondary rounded-pill">2</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center bg-primary text-white"
+            >
+              Esborranys
+              <span class="badge bg-secondary rounded-pill">12</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center bg-warning bg-opacity-25 text-warning"
+            >
+              Esborrats
+              <span class="badge bg-secondary rounded-pill">5</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center bg-danger bg-opacity-25 text-danger"
+            >
+              Correu brossa
+              <span class="badge bg-secondary rounded-pill">33</span>
+            </li>
+          </ul>
+
+          <!-- Correu superimportant -->
+          <div class="row mt-4">
+            <!-- Columna esquerra: llista amb badge “Spam” posicionat -->
+            <div class="col-4">
+              <ul class="list-group w-100">
+                <li
+                  class="list-group-item  bg-primary text-white"
+                >
+                  Correu superimportant
+                  <span
+                    class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger"
+                  >
+                    Spam
+                  </span>
+                </li>
+                <li class="list-group-item">Clica aquí!</li>
+                <li class="list-group-item">Enlarge your vocabulary</li>
+                <li class="list-group-item">Win a Lot</li>
+              </ul>
+            </div>
+
+            <!-- Columna dreta: contingut -->
+            <div class="col-8">
+              <h3>Correu superimportant</h3>
+              <p>
+                El meu nom és Jules Verne. Tinc 15 anys i uns extraterrestres
+                m'han abduït. M'han informat que la terra desapareixerà si no
+                aconsegueixo enviar aquesta informació a 5 petabytes de
+                persones. Envia-ho a 10 contactes si no vols que Bob Esponja et
+                caigui a damunt. Tens 5 microsegons per a fer-ho. A partir de...
+                ja....
+              </p>
+              <h4>Clica aquí!</h4>
+              <p>
+                Clica <a href="#">aquí</a> ràpid! Clica aquí ràpid! Clica aquí
+                ràpid! Clica aquí ràpid!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARDS TAB -->
+        <div class="tab-pane fade" id="tab-cards"></div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
